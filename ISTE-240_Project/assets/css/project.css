@@ -1,0 +1,898 @@
+* {
+  margin: 0;
+  padding: 0;
+  cursor: default;
+}
+
+/* HOMEPAGE.HTML */
+#wrap {
+  background-image:linear-gradient(to right bottom, whitesmoke, rgba(40, 180, 133, 0.8)), url("../images/homepage.jpg");
+  background-size: 100% auto;
+}
+
+.content {
+  text-align: center;
+}
+
+#wrap h1 {
+  font-weight: normal;
+    padding-top: 10%;
+}
+
+h1 {
+  font-family: verdana, sans-serif;
+  color: lightblue;
+  font-size: 700%;
+  text-shadow: 1px 1px 1px #919191,
+  1px 2px 1px #919191,
+  1px 3px 1px #919191,
+  1px 4px 1px #919191,
+  1px 5px 1px #919191,
+  1px 6px 1px #919191,
+  1px 7px 1px #919191,
+  1px 8px 1px #919191,
+  1px 9px 1px #919191,
+  1px 10px 1px #919191,
+  1px 18px 6px rgba(16,16,16,0.4),
+  1px 22px 10px rgba(16,16,16,0.2),
+  1px 25px 35px rgba(16,16,16,0.2),
+  1px 30px 60px rgba(16,16,16,0.4);
+}
+
+
+
+h2 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 300%;
+  color: lightblue;
+  text-shadow: 1px 1px 1px #919191,
+  1px 2px 1px #919191,
+  1px 3px 1px #919191,
+  1px 4px 1px #919191,
+  1px 5px 1px #919191,
+  1px 6px 1px #919191,
+  1px 7px 1px #919191,
+  1px 8px 1px #919191,
+  1px 9px 1px #919191,
+  1px 10px 1px #919191,
+  1px 18px 6px rgba(16,16,16,0.4),
+  1px 22px 10px rgba(16,16,16,0.2),
+  1px 25px 35px rgba(16,16,16,0.2),
+  1px 30px 60px rgba(16,16,16,0.4);
+}
+
+h4 {
+  font-family: 'Srisakdi', cursive;
+  color: white;
+  text-shadow: 2px 4px 4px black;
+}
+
+#wrap p {
+  width: 60%;
+  margin: 25px auto;
+}
+
+.button {
+  text-align: center;
+  font-size: 42px;
+  font-family: 'Shadows Into Light', cursive;
+  color: hsl(220, 80%, 50%);
+  width: 350px;
+  height: 100px;
+  margin-top: 50px;
+  cursor: pointer;
+  text-decoration: none;
+
+  text-shadow:
+          0 5px hsl(220, 80%, 30%),
+          0 10px 10px #0003;
+  box-shadow:
+          0 0 0 15px hsl(138, 70%, 67%),
+          0 10px 0 15px hsl(144, 55%, 46%),
+          0 20px 20px 15px #0003;
+  border-radius: 100px 30px 100px 30px;
+
+}
+
+.button p {
+  margin-top: 20px;
+  transform: rotate(-3deg);
+}
+
+.button:hover {
+  animation: .8s morphing ease infinite;
+}
+
+.button:hover p {
+  animation: .8s rotation ease infinite;
+}
+
+@keyframes morphing {
+  0% {
+    border-radius: 100px 30px 100px 30px;
+  } 50% {
+      border-radius: 30px 100px 30px 100px;
+    } 100% {
+        border-radius: 100px 30px 100px 30px;
+      }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(-3deg);
+  } 50% {
+      transform: rotate(3deg);
+    } 100% {
+        transform: rotate(-3deg);
+      }
+}
+
+#div2 {
+  padding-top: 25px;
+  background: whitesmoke;
+}
+
+#div2 h2 {
+  text-align: center;
+}
+
+#left h4, #left4 a{
+  float: left;
+  margin-left: 10px;
+  width: 100%;
+  display: table-cell;
+}
+
+#left h4 {
+  font-size: 120%;
+}
+
+#left a {
+  color: rgba(40, 180, 133, 0.8);
+  font-family: 'Shadows Into Light', cursive;
+}
+
+#left a:hover {
+  color: white;
+  background-color: rgba(40, 180, 133, 0.8);
+  font-weight: bold;
+  padding: 3px;
+  box-shadow: 1px 5px 5px darkgray;
+}
+
+
+#slideshow-container {
+  height: 500px;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+
+}
+
+#slideshow-container > div {
+  height: 721px;
+  width: 3264px;
+  background: url("../images/slideshow1_collage.jpg");
+  top: 10px;
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+.slideshow1 {
+  animation: slideshow 10s linear infinite;
+}
+
+.slideshow2 {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  background-position: 0 -200px;
+  animation: slideshow 7s linear infinite;
+}
+
+.slideshow2:hover {
+  opacity: 1;
+  animation: slideshow 15s linear infinite;
+}
+
+@keyframes slideshow {
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+footer {
+  background-color: #333;
+  color: #f7f7f7;
+  margin-top: 3px;
+  padding-top: 10px;
+  font-size: 1.4rem;
+}
+
+#divImg img {
+  position: relative;
+  width: 15em;
+  height: auto;
+  left: 40%
+}
+
+.row {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer_item {
+  text-align: center;
+  display: inline;
+}
+
+.footer_item p {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+#html_logo, #css_logo {
+  left: 10px;
+  display: inline-flex;
+  width: 5rem;
+  cursor: pointer;
+}
+
+#logo {
+  margin-left: 60%;
+  padding-bottom: 2em;
+}
+
+.footer_item li {
+  display: inline-flex;
+  text-shadow: 1px 1px whitesmoke;
+  color: white;
+  font-family: 'Shadows Into Light', cursive;
+
+}
+
+.overline {
+  text-decoration-line: overline;
+}
+
+/* TDO.HTML */
+
+#pic1_winter {
+    background-image: url("../images/amsterdam_winter1.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#pic2_winter {
+    background-image: url("../images/amsterdam_winter2.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#pic3_winter {
+    background-image: url("../images/amsterdam_winter3.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#pic1_spring {
+    background-image: url("../images/amsterdam_spring1.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#pic2_spring {
+    background-image: url("../images/amsterdam_spring2.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#pic3_spring {
+    background-image: url("../images/amsterdam_spring3.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#pic1_summer {
+    background-image: url("../images/amsterdam_summer1.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#pic2_summer {
+    background-image: url("../images/amsterdam_summer2.jpeg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#pic3_summer {
+    background-image: url("../images/amsterdam_summer3.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#pic1_autumn {
+    background-image: url("../images/amsterdam_autumn1.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#pic2_autumn {
+    background-image: url("../images/amsterdam_autumn2.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#pic3_autumn {
+    background-image: url("../images/amsterdam_autumn3.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#autumn, #summer, #spring {
+    display: none;
+}
+
+.backTop {
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.backTop:hover {
+    background-color: #555;
+}
+
+/* FESTIVAL.HTML */
+
+.p_description {
+    text-align: center;
+    padding-top: 5px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 140%;
+    -webkit-box-shadow: 14px 10px 18px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 10px 18px -8px rgba(0,0,0,0.75);
+    box-shadow: 14px 10px 18px -8px rgba(0,0,0,0.75);
+}
+
+#festival5 {
+    background-image: url('../images/amsterdam_festival5.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+#festival4 {
+    background-image: url("../images/amsterdam_festival4.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+#festival3 {
+    background-image: url("../images/amsterdam_festival3.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+#festival2 {
+    background-image: url("../images/amsterdam_festival2.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+#festival1 {
+    background-image: url("../images/amsterdam_festival1.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+.images_back {
+    padding: 200px 0 200px;
+}
+
+.images_back h1 {
+    text-align: center;
+}
+
+.center_div {
+    margin: 10px 30% 0 30%;
+    padding: 10px;
+    background-color: white;
+    -webkit-box-shadow: 4px 4px 36px -8px rgba(115,115,115,1);
+    -moz-box-shadow: 4px 4px 36px -8px rgba(115,115,115,1);
+    box-shadow: 4px 4px 36px -8px rgba(115,115,115,1);
+}
+
+/* FOOD.HTML */
+#food1 {
+    background-image: url('../images/amsterdam_food1.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+#food2 {
+    background-image: url("../images/amsterdam_food2.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+#food3 {
+    background-image: url("../images/amsterdam_food3.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+#food4 {
+    background-image: url("../images/amsterdam_food4.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+#food5 {
+    background-image: url("../images/amsterdam_food5.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+/* SURVEY.HTML */
+#survey {
+    background-image: url(../images/background_form.jpg);
+}
+
+.green {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 500px;
+    background: #F8F8F8;
+    padding: 30px 30px 20px 30px;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #666;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.green h1 {
+    font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 20px 0 20px 40px;
+    display: block;
+    margin: -30px -30px 10px -30px;
+    color: #FFF;
+    background-image: linear-gradient(260deg, #00cc99 100%, #00cc66 75%);
+    text-shadow: 1px 1px 1px #949494;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    border-bottom:1px solid #89AF4C;
+
+}
+.green h1>p {
+    display: block;
+    font-size: 11px;
+    color: #FFF;
+}
+
+.green label {
+    display: block;
+    margin: 0 0 5px;
+}
+.green label>p {
+    float: left;
+    margin-top: 10px;
+    color: #5E5E5E;
+}
+.green input[type="text"],
+.green input[type="email"],
+.green input[type="date"],
+.green input[type="color"],
+.green input[type="number"],
+.green input[type="tel"],
+.green input[type="url"],
+.green textarea,
+.green select {
+    color: #555;
+    height: 30px;
+    width: 100%;
+    padding: 0 0 0 10px;
+    margin-top: 2px;
+    border: 1px solid #E5E5E5;
+    background: #FBFBFB;
+    outline: 0;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    font: normal 14px/14px Arial, Helvetica, sans-serif;
+}
+.green textarea{
+    height:100px;
+    padding-top: 10px;
+}
+.green select {
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    text-overflow: '';
+    width:100%;
+    height:30px;
+}
+.green .button_validate {
+    background-image: linear-gradient(260deg, #00cc99 100%, #00cc66 0%);
+    -webkit-border-radius: 5px;
+    -moz-border-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #949494;
+    transition:all 1s linear;
+}
+.green .button_validate:hover {
+    cursor:pointer;
+    background-color:#80A24A;
+}
+.indent{
+    position:relative;
+}
+#inputName input {
+    width:10em;
+    display:inline;
+}
+
+#inputEmail input {
+    width:20em;
+    display:inline;
+}
+
+#inputBirthday input {
+    width:10em;
+    display: inline;
+}
+
+
+#inputName, #inputEmail, #inputBirthday {
+    margin-bottom: 5px;
+}
+
+#upSpace {
+    margin-top: 5px;
+}
+
+.astrix {
+    color:red;
+    font-size:3.5em;
+    position:relative;
+    display:inline;
+    top:0.42em;
+    left:-0.20em;
+}
+.rule {
+    color:red;
+    font-size:2.2em;
+    position:relative;
+    top:0.33em;
+}
+
+/* STUDY.HTML */
+
+#study h1 {
+    font-size: 300%;
+    text-align: center;
+}
+
+#study_general {
+    background-image: url("../images/amsterdam_studygeneral.gif");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+#study1 {
+    background-image: url("../images/amsterdam_study1.gif");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+#study2 {
+    background-image: url("../images/amsterdam_study2.gif");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+#study3 {
+    background-image: url("../images/amsterdam_study3.gif");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+#study4 {
+    background-image: url("../images/amsterdam_study4.gif");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+#study5 {
+    background-image: url("../images/amsterdam_study5.gif");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+/* TRIP.HTML */
+#trip h1 {
+    font-size: 500%;
+}
+
+#hotel1 {
+    background-image: url("../images/amsterdam_hotel1.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+#hotel2 {
+    background-image: url("../images/amsterdam_hotel2.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+#hotel3 {
+    background-image: url("../images/amsterdam_hotel3.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+#hotel4 {
+    background-image: url("../images/amsterdam_hotel4.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+#hotel5 {
+    background-image: url("../images/amsterdam_hotel5.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+/* ABOUT.HTML */
+#about {
+    padding-top: 70px;
+    padding-bottom: 100px;
+    background-image: linear-gradient(to bottom, #b4e391 0%,#61c419 50%,#b4e391 100%);
+}
+
+#about figure {
+    height: 200px;
+    width: auto;
+    float: left;
+}
+
+#about img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid lightblue;
+}
+
+#about img:hover {
+    filter: drop-shadow(0 0 5px black);
+}
+
+#about figcaption {
+    background: -moz-linear-gradient(top, rgba(80,155,31,1) 0%, rgba(125,185,232,0) 100%);
+    background: -webkit-linear-gradient(top, rgba(80,155,31,1) 0%,rgba(125,185,232,0) 100%);
+    background: linear-gradient(to bottom, rgba(80,155,31,1) 0%,rgba(125,185,232,0) 100%);
+}
+
+#about p {
+    text-align: center;
+    padding: 0 5em 0 23em;
+    line-height: 200%;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 140%;
+    text-shadow: 1px 0 1px #CCCCCC,
+                 0 1px 1px #EEEEEE,
+                 2px 1px 1px #CCCCCC,
+                 1px 2px 1px #EEEEEE,
+                 3px 2px 1px #CCCCCC,
+                 2px 3px 1px #EEEEEE,
+                 4px 3px 1px #CCCCCC,
+                 3px 4px 1px #EEEEEE,
+                 5px 4px 1px #CCCCCC,
+                 4px 5px 1px #EEEEEE,
+                 6px 5px 1px #CCCCCC,
+                 5px 6px 1px #EEEEEE,
+                 7px 6px 1px #CCCCCC;
+}
+
+#about p:hover {
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF,
+                 0 0 10px #FFF,
+                 0 0 15px #FFF,
+                 0 0 20px #0b12ff,
+                 0 0 30px #49FF18,
+                 0 0 40px #49FF18,
+                 0 0 55px #49FF18,
+                 0 0 75px #49ff18;
+}
+
+/* RUBRIC.HTML */
+
+#rubric {
+    margin: 0 2em 0 2em;
+
+    padding: 1em 0 1em 0;
+}
+
+#rubric p {
+    text-align: center;
+    color: gray;
+    font-family: "Shree Devanagari 714", Verdana, sans-serif;
+}
+
+#rubric h3 {
+    text-align: center;
+    color: green;
+    text-shadow: 0 0 5px #FFF,
+    0 0 10px #FFF,
+    0 0 15px #FFF,
+    0 0 20px #0b12ff,
+    0 0 30px #49FF18,
+    0 0 40px #49FF18,
+    0 0 55px #49FF18,
+    0 0 75px #49ff18;
+    padding: 1em 0 1em 0;
+}
+
+iframe {
+    width: 100%;
+    height: 100em;
+}
+
+/* CITATION.HTML */
+
+.table_ref {
+    font-size: 1.6rem;
+}
+
+.table_ref:not(:last-child){
+    margin-bottom: 3rem;
+}
+
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.img {
+    width: 20%;
+}
+
+.table {
+    padding: 2em 6em 2em 6em;
+}
+
